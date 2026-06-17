@@ -7,3 +7,35 @@
 
 "Vision":
   color: "#009f36"
+
+"PRX Life":
+  url: https://journals.aps.org/prxlife/
+  color: "#000000"
+
+"Phys. Rev. E":
+  url: https://journals.aps.org/pre/
+  # color: "#8C6040"
+
+"Phys. Rev. B":
+  url: https://journals.aps.org/prb/
+  color: "#AD293A"
+
+"Phys. Rev. Lett.":
+  url: https://journals.aps.org/prl/
+  color: "#5B7D69"
+
+"Phys. Rev. X":
+  url: https://journals.aps.org/prx/
+  color: "#1E4BB0"
+
+"arXiv":
+  url: https://arxiv.org
+  color: "#A42C25"
+
+"Biophys. J.":
+  url: https://www.cell.com/biophysj
+  color: "#173D7A"
+
+"JOSS":
+  url: https://joss.theoj.org/
+  color: "#599F46"

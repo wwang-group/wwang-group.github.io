@@ -1,0 +1,26 @@
+/*******************************************************************************
+ * Custom styles
+ ******************************************************************************/
+
+// Faded, dashed-underline links (kept at body text color; accent on hover).
+// Wrap inline text/links: <span class="dottedlinks">...</span>
+.dottedlinks a {
+  color: var(--global-text-color);
+  border-bottom: 1px dashed var(--global-text-color);
+
+  &:hover {
+    color: var(--global-theme-color);
+    text-decoration: none;
+  }
+}
+
+// Muted, slightly smaller note text (e.g. image credits, captions).
+.fadednote {
+  font-size: 0.875rem;
+  color: var(--global-author-color);
+}
+
+.fadedsmallnote {
+  font-size: 0.75rem;
+  color: var(--global-author-color);
+}

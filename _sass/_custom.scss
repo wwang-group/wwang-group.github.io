@@ -24,3 +24,16 @@
   font-size: 0.75rem;
   color: var(--global-author-color);
 }
+
+// Publication co-author links: body text color by default (dashed underline),
+// switching to the accent color (solid underline) only on hover.
+// Overrides .author a in _publications.scss (loaded earlier).
+.publications ol.bibliography li .author a {
+  color: var(--global-text-color);
+  border-bottom-color: var(--global-text-color);
+
+  &:hover {
+    color: var(--global-theme-color);
+    border-bottom-color: var(--global-theme-color);
+  }
+}

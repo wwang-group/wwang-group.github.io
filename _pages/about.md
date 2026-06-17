@@ -1,6 +1,6 @@
 ---
 layout: about
-title: about
+title: home
 permalink: /
 subtitle: <span class="dottedlinks fadednote"><a href="https://physics-astronomy.jhu.edu" rel="external nofollow noopener" target="_blank">Department of Physics and Astronomy</a>, Johns Hopkins University</span>
 

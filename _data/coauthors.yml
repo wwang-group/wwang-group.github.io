@@ -32,3 +32,17 @@
 "planck":
   - firstname: ["Max"]
     url: https://en.wikipedia.org/wiki/Max_Planck
+
+"camley":
+  - firstname: ["Brian A.", "Brian A", "Brian", "B.", "B. A.", "BA"]
+    url: https://physics-astronomy.jhu.edu/directory/brian-camley/
+
+"konstantopoulos":
+  - firstname: ["Konstantinos", "K."]
+    url: https://engineering.jhu.edu/faculty/konstantinos-konstantopoulos/
+
+# "Perez Ipi\~na" (Perez Ipiña) -> "perez ipina"
+"perez ipina":
+  - firstname: ["Emiliano", "E."]
+    url: https://emperipi.github.io/
+

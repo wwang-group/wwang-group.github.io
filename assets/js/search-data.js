@@ -11,10 +11,10 @@ ninja.data = [{
     },
   },{id: "nav-research",
           title: "research",
-          description: "A growing collection of your cool projects [not added yet].",
+          description: "Research areas of our goup.",
           section: "Navigation",
           handler: () => {
-            window.location.href = "/projects/";
+            window.location.href = "/research/";
           },
         },{id: "nav-publications",
           title: "publications",
@@ -42,7 +42,7 @@ ninja.data = [{
               description: "",
               section: "Dropdown",
               handler: () => {
-                window.location.href = "/repositories/";
+                window.location.href = "/repos/";
               },
             },{id: "dropdown-teaching",
               title: "teaching",
@@ -480,6 +480,21 @@ ninja.data = [{
           description: "another project with an image 🎉",
           section: "Projects",handler: () => {
               window.location.href = "/projects/9_project/";
+            },},{id: "projects-magnetism-magnon-transport",
+          title: 'magnetism: magnon transport',
+          description: "",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/area_magnetism/";
+            },},{id: "projects-tissue-mechanics-fracture-and-size-regulation",
+          title: 'tissue mechanics: fracture and size regulation',
+          description: "",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/area_mechanics/";
+            },},{id: "projects-physical-limits-on-the-accuracy-of-cell-sensing",
+          title: 'physical limits on the accuracy of cell sensing',
+          description: "",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/area_sensing/";
             },},{id: "teachings-general-physics-i",
           title: 'General Physics I',
           description: "Worked as Teaching Assistant (TA) in the Department of Physics and Astronomy at Johns Hopkins University.",

@@ -25,6 +25,92 @@
   color: var(--global-author-color);
 }
 
+// Medium faded note — e.g. a person's role on the people/team page.
+.fadedmednote {
+  font-size: 1rem;
+  color: var(--global-author-color);
+
+  a {
+    color: inherit;
+    border-bottom: 1px dashed;
+
+    &:hover {
+      color: var(--global-theme-color);
+      text-decoration: none;
+    }
+  }
+}
+
+// Small vertical spacer.
+.spacer {
+  height: 10px;
+}
+
+// People/team page (scoped to .people so the About-page profile picture, which
+// also uses .profile / .social, is left untouched).
+.people {
+  .profile {
+    width: 100%;
+    min-width: 80px;
+    max-width: 180px;
+
+    // Put the aspect-ratio on the <figure> (a block container, where it always
+    // works) instead of the <img> — browsers ignore aspect-ratio on the img here
+    // because of its height:auto, so it fell back to the photo's native ratio.
+    // Change this one value to taste: 1/1 square, 5/6 a bit taller, 3/4 portrait.
+    figure {
+      position: relative;
+      margin: 0;
+      aspect-ratio: 16 / 17; // ≈0.94
+    }
+
+    picture {
+      display: block;
+    }
+
+    img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover; // crop to fill, no distortion
+    }
+  }
+
+  // Smaller, left-aligned contact icons under each person (vs the big centered
+  // icons on the About page).
+  .social {
+    text-align: left;
+
+    .contact-icons {
+      font-size: 1.4rem;
+    }
+  }
+}
+
+// University logo, pinned to the top-right corner of the home (about) page.
+.post {
+  position: relative;
+}
+
+.university-logo {
+  position: absolute;
+  top: -10px; // move up (more negative = higher); right: 0 keeps it in the corner
+  right: 0;
+  z-index: 2;
+
+  img {
+    max-height: 64px;
+    width: auto;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .university-logo img {
+    max-height: 40px;
+  }
+}
+
 // Publication co-author links: body text color by default (dashed underline),
 // switching to the accent color (solid underline) only on hover.
 // Overrides .author a in _publications.scss (loaded earlier).

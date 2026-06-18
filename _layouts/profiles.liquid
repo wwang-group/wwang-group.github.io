@@ -1,36 +1,76 @@
 ---
 layout: page
 ---
-<div class="post">
+<div class="post people">
   <article>
-    {% if page.profiles %}
-      {% for profile in page.profiles %}
-        <hr>
-        <div class="profile float-{% if profile.align == 'left' %}left{% else %}right{% endif %}">
-          {% if profile.image %}
-            {% assign profile_image_path = profile.image | prepend: 'assets/img/' %}
-            {% if profile.image_circular %}
+    {% assign people = site.people | sort: 'order' %}
+    {% for person in people %}
+      <hr>
+      <div class="row">
+        <div class="col-sm-4 profile">
+          {% if person.image %}
+            {% assign profile_image_path = person.image | prepend: 'assets/img/' %}
+            {% if person.image_circular %}
               {% assign profile_image_class = 'img-fluid z-depth-1 rounded-circle' %}
             {% else %}
               {% assign profile_image_class = 'img-fluid z-depth-1 rounded' %}
             {% endif %}
-            {% capture sizes %}(min-width: {{ site.max_width }}) {{ site.max_width | minus: 30 | times: 0.3}}px, (min-width: 576px) 30vw, 95vw"{% endcapture %}
-            {% include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=profile.image %}
-          {% endif %}
-          {% if profile.more_info %}
-            <div class="more-info">{{ profile.more_info }}</div>
+            {% capture sizes %}(min-width: {{ site.max_width }}) {{ site.max_width | minus: 30 | times: 0.3 }}px, (min-width: 576px) 30vw, 95vw"{% endcapture %}
+            {% include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=person.image %}
           {% endif %}
         </div>
 
-        <div class="clearfix">
-          {% if profile.content %}
-            {% capture profile_content %}{% include_relative {{ profile.content }} %}{% endcapture %}
-            {{ profile_content | markdownify }}
-          {% else %}
-            {{ content }}
+        <div class="col-sm-8">
+          <div class="clearfix">{{ person.content | markdownify }}</div>
+
+          {% if person.email
+            or person.cv
+            or person.scholar
+            or person.orcid
+            or person.github
+            or person.x
+            or person.bluesky
+            or person.linkedin
+            or person.website
+          %}
+            <div class="social">
+              <div class="contact-icons">
+                {% if person.email %}
+                  <a href="mailto:{{ person.email }}" title="email"><i class="fas fa-envelope"></i></a>&nbsp;
+                {% endif %}
+                {% if person.cv %}
+                  <a href="{{ person.cv }}" title="CV" target="_blank"><i class="ai ai-cv"></i></a>&nbsp;
+                {% endif %}
+                {% if person.scholar %}
+                  <a href="https://scholar.google.com/citations?user={{ person.scholar }}" title="Google Scholar" target="_blank"
+                    ><i class="fa-brands fa-google-scholar"></i></a
+                  >&nbsp;
+                {% endif %}
+                {% if person.orcid %}
+                  <a href="https://orcid.org/{{ person.orcid }}" title="ORCID" target="_blank"><i class="ai ai-orcid"></i></a>&nbsp;
+                {% endif %}
+                {% if person.github %}
+                  <a href="https://github.com/{{ person.github }}" title="GitHub" target="_blank"><i class="fab fa-github"></i></a>&nbsp;
+                {% endif %}
+                {% if person.x %}
+                  <a href="https://x.com/{{ person.x }}" title="X" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>&nbsp;
+                {% endif %}
+                {% if person.bluesky %}
+                  <a href="https://bsky.app/profile/{{ person.bluesky }}" title="Bluesky" target="_blank"><i class="fa-brands fa-bluesky"></i></a
+                  >&nbsp;
+                {% endif %}
+                {% if person.linkedin %}
+                  <a href="https://www.linkedin.com/in/{{ person.linkedin }}" title="LinkedIn" target="_blank"><i class="fab fa-linkedin"></i></a
+                  >&nbsp;
+                {% endif %}
+                {% if person.website %}
+                  <a href="{{ person.website }}" title="Website" target="_blank"><i class="fas fa-globe"></i></a>&nbsp;
+                {% endif %}
+              </div>
+            </div>
           {% endif %}
         </div>
-      {% endfor %}
-    {% endif %}
+      </div>
+    {% endfor %}
   </article>
 </div>

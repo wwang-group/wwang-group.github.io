@@ -162,6 +162,8 @@ collections:
     output: true
   teachings:
     output: true
+  people:
+    output: false # rendered as a list on /people/, no individual pages
 
 # -----------------------------------------------------------------------------
 # Jekyll settings

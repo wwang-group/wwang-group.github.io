@@ -2,6 +2,24 @@
 layout: default
 ---
 <div class="post">
+  {% if page.logo %}
+    <div class="university-logo">
+      {% if page.logo_url %}<a href="{{ page.logo_url }}" target="_blank" rel="external nofollow noopener">{% endif %}
+      <img
+        class="{% if page.logo_dark %}only-light{% endif %}"
+        src="{{ page.logo | prepend: 'assets/img/' | relative_url }}"
+        alt="{{ page.logo_alt | default: 'University logo' }}"
+      >
+      {% if page.logo_dark %}
+        <img
+          class="only-dark"
+          src="{{ page.logo_dark | prepend: 'assets/img/' | relative_url }}"
+          alt="{{ page.logo_alt | default: 'University logo' }}"
+        >
+      {% endif %}
+      {% if page.logo_url %}</a>{% endif %}
+    </div>
+  {% endif %}
   <header class="post-header">
     <h1 class="post-title">
       {% if site.title == 'blank' %}

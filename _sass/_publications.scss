@@ -131,6 +131,17 @@
             text-decoration: underline;
           }
         }
+
+        // Nudge the Altmetric badge down so it lines up with the others.
+        .altmetric-embed {
+          position: relative;
+          top: 4.6px;
+        }
+
+        // Space between the Dimensions badge and the Scholar badge.
+        .__dimensions_badge_embed__ {
+          padding-right: 0.48rem;
+        }
       }
 
       .hidden {

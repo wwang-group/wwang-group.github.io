@@ -1,11 +1,11 @@
 ---
 layout: page
 title: research
-permalink: /projects/
-description: A growing collection of your cool projects [not added yet].
+permalink: /research/
+description: Research areas of our goup.
 nav: true
 nav_order: 1
-display_categories: [work, fun]
+display_categories: [areas] # [work, fun]
 horizontal: false
 ---
 

@@ -20,6 +20,7 @@
   abstract          = {Detachment and fracture are central to many tissue-level processes, but they are challenging to simulate with Voronoi-type models that typically assume a confluent tissue. Here we analyze the finite Voronoi model, a nonconfluent extension of conventional Voronoi models, in which cell boundaries are composed of straight Voronoi edges and circular arcs of fixed radius ℓ. When the line tension on cell-medium interfaces exceeds the tension on cell-cell contacts, we find that the model exhibits a strong time-step dependence in the fracture timescale of initially intact active clusters: decreasing Δt can unphysically suppress cluster rupture events. We trace this behavior to a divergence of detachment forces in the finite Voronoi model and introduce a simple regularization. Finally, we calibrate the near-detachment mechanics against a deformable polygon model and examine how key physical parameters control the tissue fracture timescale under two different calibration strategies. Our results show that, for studies focused on fracture or intercellular adhesion in nonconfluent monolayers, a physically motivated calibration of near-detachment mechanics in the finite Voronoi model is essential.}
 }
 
+
 @article{z9xd-xbw5,
   title     = {Perfect adaptation in eukaryotic gradient sensing using cooperative allosteric binding},
   author    = {Srinivasan†, Vishnu and Wang, Wei and Camley, Brian A.},
@@ -99,6 +100,31 @@
 }
 
 
+@article{kashyap2024trade,
+  title             = {Trade-offs in concentration sensing in dynamic environments},
+  author            = {Kashyap†, Aparajita and Wang, Wei and Camley, Brian A},
+  journal           = {Biophysical Journal},
+  volume            = {123},
+  number            = {10},
+  pages             = {1184--1194},
+  month             = {May},
+  year              = {2024},
+  publisher         = {Elsevier},
+  doi               = {10.1016/j.bpj.2024.03.025},
+  abbr              = {Biophys. J.},
+  preview           = {dynamic_sensing.png},
+  altmetric         = {154888669},
+  dimensions        = {true},
+  google_scholar_id = {UebtZRa9Y70C},
+  code              = {https://zenodo.org/records/11001913},
+  selected          = {false},
+  annotation        = {† JHU undergraduate trainee},
+  html              = {https://www.cell.com/biophysj/fulltext/S0006-3495(24)00205-4},
+  bibtex_show       = {true},
+  abstract          = {When cells measure concentrations of chemical signals, they may average multiple measurements over time in order to reduce noise in their measurements. However, when cells are in an environment that changes over time, past measurements may not reflect current conditions—creating a new source of error that trades off against noise in chemical sensing. What statistics in the cell’s environment control this trade-off? What properties of the environment make it variable enough that this trade-off is relevant? We model a single eukaryotic cell sensing a chemical secreted from bacteria (e.g., folic acid). In this case, the environment changes because the bacteria swim—leading to changes in the true concentration at the cell. We develop analytical calculations and stochastic simulations of sensing in this environment. We find that cells can have a huge variety of optimal sensing strategies ranging from not time averaging at all to averaging over an arbitrarily long time or having a finite optimal averaging time. The factors that primarily control the ideal averaging are the ratio of sensing noise to environmental variation and the ratio of timescales of sensing to the timescale of environmental variation. Sensing noise depends on the receptor-ligand kinetics, while environmental variation depends on the density of bacteria and the degradation and diffusion properties of the secreted chemoattractant. Our results suggest that fluctuating environmental concentrations may be a relevant source of noise even in a relatively static environment.}
+}
+
+
 @article{PhysRevE.109.054408,
   title     = {Limits on the accuracy of contact inhibition of locomotion},
   author    = {Wang, Wei and Camley, Brian A.},
@@ -124,6 +150,7 @@
   abstract = {Cells that collide with each other repolarize away from contact, in a process called contact inhibition of locomotion (CIL), which is necessary for correct development of the embryo. CIL can occur even when cells make a micron-scale contact with a neighbor—much smaller than their size. How precisely can a cell sense cell-cell contact and repolarize in the correct direction? What factors control whether a cell recognizes it has contacted a neighbor? We propose a theoretical model for the limits of CIL where cells recognize the presence of another cell by binding the protein ephrin with the Eph receptor. This recognition is made difficult by the presence of interfering ligands that bind nonspecifically. Both theoretical predictions and simulation results show that it becomes more difficult to sense cell-cell contact when it is difficult to distinguish ephrin from the interfering ligands, or when there are more interfering ligands, or when the contact width decreases. However, the error of estimating contact position remains almost constant when the contact width changes. This happens because the cell gains spatial information largely from the boundaries of cell-cell contact. We study using statistical decision theory the likelihood of a false-positive CIL event in the absence of cell-cell contact, and the likelihood of a false negative where CIL does not occur when another cell is present. Our results suggest that the cell is more likely to make incorrect decisions when the contact width is very small or so large that it nears the cell's perimeter. However, in general, we find that cells have the ability to make reasonably reliable CIL decisions even for very narrow (micron-scale) contacts, even if the concentration of interfering ligands is ten times that of the correct ligands.},
 }
 
+
 @article{PhysRevB.99.214407,
   title     = {Collective induced antidiffusion effect and general magnon Boltzmann transport theory},
   author    = {Liu, Tao and Wang, Wei and Zhang, Jianwei},
@@ -146,28 +173,4 @@
   html = {https://journals.aps.org/prb/abstract/10.1103/PhysRevB.99.214407},
   bibtex_show = {true},
   abstract = {Magnon transport and its efficient manipulation in FIs (ferromagnetic insulators) are important issues in magnon spintronics research, while the relaxation and decay of magnons are still in debates. In this paper, starting from the Hamiltonian of a magnetically ordered system, we derive and solve the general magnon Boltzmann equation. It is found that there exists an “antidiffusion driving effect” in magnon transport, which is caused by the collective interaction of a high density (or strong magnetic field) magnon gas in the limited magnetic background. This effect acts as a “spin pressure” on magnons, resulting in a decrease in magnon propagation length and an extra accumulation near the magnon generation boundary. By applying the derived magnon Boltzmann equation to several cases and comparing with the experiments, it is shown that our theory cannot only describe the influence of the external magnetic field on magnon transport but also confirm the fast drop regime in magnon transport is attributed to the boundary effect. The magnon Boltzmann method also predicts a new pathway for manipulations of magnon transport in FIs.},
-}
-
-@article{kashyap2024trade,
-  title     = {Trade-offs in concentration sensing in dynamic environments},
-  author    = {Kashyap†, Aparajita and Wang, Wei and Camley, Brian A},
-  journal   = {Biophysical Journal},
-  volume    = {123},
-  number    = {10},
-  pages     = {1184--1194},
-  month     = {May},
-  year      = {2024},
-  publisher = {Elsevier},
-  doi       = {10.1016/j.bpj.2024.03.025},
-  abbr      = {Biophys. J.},
-  preview   = {dynamic_sensing.png},
-  altmetric = {154888669},
-  dimensions = {true},
-  google_scholar_id = {UebtZRa9Y70C},
-  code      = {https://zenodo.org/records/11001913},
-  selected  = {false},
-  annotation = {† JHU undergraduate trainee},
-  html = {https://www.cell.com/biophysj/fulltext/S0006-3495(24)00205-4},
-  bibtex_show = {true},
-  abstract = {When cells measure concentrations of chemical signals, they may average multiple measurements over time in order to reduce noise in their measurements. However, when cells are in an environment that changes over time, past measurements may not reflect current conditions—creating a new source of error that trades off against noise in chemical sensing. What statistics in the cell’s environment control this trade-off? What properties of the environment make it variable enough that this trade-off is relevant? We model a single eukaryotic cell sensing a chemical secreted from bacteria (e.g., folic acid). In this case, the environment changes because the bacteria swim—leading to changes in the true concentration at the cell. We develop analytical calculations and stochastic simulations of sensing in this environment. We find that cells can have a huge variety of optimal sensing strategies ranging from not time averaging at all to averaging over an arbitrarily long time or having a finite optimal averaging time. The factors that primarily control the ideal averaging are the ratio of sensing noise to environmental variation and the ratio of timescales of sensing to the timescale of environmental variation. Sensing noise depends on the receptor-ligand kinetics, while environmental variation depends on the density of bacteria and the degradation and diffusion properties of the secreted chemoattractant. Our results suggest that fluctuating environmental concentrations may be a relevant source of noise even in a relatively static environment.},
 }

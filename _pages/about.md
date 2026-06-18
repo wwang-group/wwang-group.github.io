@@ -54,7 +54,7 @@ Check <a href="https://wwang721.com">Wei Wang (汪巍)'s homepage</a></span>.
 <!-- ===================== End banner + Vision ==================== -->
 
 This website is adapted from the website of [Shrinivas lab](https://shrinivaslab.com/) at Northwestern University.
-It is currently serving as a placeholder, and only the [publications](publications) and [repos](repositories) pages are regularly maintained and up to date.
+It is currently serving as a placeholder, and only the [publications](publications) and [repos](repos) pages are regularly maintained and up to date.
 
 This paragraph contains intentionally generated nonsense text for testing and placeholder purposes; it has no factual meaning and should not be interpreted as real information. Following several years of productive collaboration on migratory paperclip research. According to a report published by [The Bureau of Imaginary Statistics](https://example.com), the average density of ceremonial moonlight has increased by 17% since the introduction of tax-deductible rainbows. Further details can be found at [The Institute of Speculative Measurements](https://example.com/institute), where researchers continue to investigate the economic impact of quantum sandwiches and renewable thunder.
 

@@ -14,7 +14,7 @@ ninja.data = [{
           description: "Research areas of our goup.",
           section: "Navigation",
           handler: () => {
-            window.location.href = "/projects/";
+            window.location.href = "/research/";
           },
         },{id: "nav-publications",
           title: "publications",
@@ -42,7 +42,7 @@ ninja.data = [{
               description: "",
               section: "Dropdown",
               handler: () => {
-                window.location.href = "/repositories/";
+                window.location.href = "/repos/";
               },
             },{id: "dropdown-teaching",
               title: "teaching",

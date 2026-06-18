@@ -49,6 +49,12 @@
 // People/team page (scoped to .people so the About-page profile picture, which
 // also uses .profile / .social, is left untouched).
 .people {
+  // Vertical gap between people. Bootstrap's default <hr> margin is 1rem
+  // top/bottom; bump it for more breathing room between entries (tune to taste).
+  hr {
+    margin-top: 1.9rem;
+  }
+
   .profile {
     width: 100%;
     min-width: 80px;

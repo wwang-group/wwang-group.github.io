@@ -1,6 +1,5 @@
 github_users:
   - wwang721
-  - Innocentcloud
 
 repo_description_lines_max: 2
 
@@ -11,4 +10,6 @@ github_repos:
   - wwang-group/hwang-plot
   - wwang721/size-control-reproduce
   - wwang721/allosteric-sensing-reproduce
+  - wwang721/hopkins-letter
   - wwang721/tsinghua-letter
+  - wwang721/Tongji-Beamer-Template

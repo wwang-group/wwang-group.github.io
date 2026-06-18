@@ -1,6 +1,48 @@
 ---
 layout: page
 ---
+{% comment %}
+  Per-course logo, top-right of the course page. Opt-in: with no `logo:` map in
+  the course front matter, no logo is shown. Only `light` is required; the rest
+  are optional:
+
+    logo:
+      light:  logos/my-logo.png        # light-mode image (path under assets/img/) — required
+      dark:   logos/my-logo-white.png  # dark-mode variant (defaults to `light`)
+      url:    https://example.edu      # link target; omit for no link
+      alt:    Example University        # alt text (defaults to the course title)
+      height: 54px                      # size on the course page
+      top:    -24px                     # course-page vertical pos, more negative = higher
+      right:  0                         # course-page horizontal position
+      card:                             # optional: size/position on the teaching card
+        height: 40px
+        top:    15px
+        right:  15px
+{% endcomment %}
+{% assign logo = page.logo %}
+{% if logo.light %}
+  {% assign logo_dark = logo.dark | default: logo.light %}
+  {% assign logo_alt = logo.alt | default: page.title %}
+  {% capture logo_pos %}{% if logo.top %}top: {{ logo.top }};{% endif %}{% if logo.right %}right: {{ logo.right }};{% endif %}{% endcapture %}
+  {% capture logo_size %}{% if logo.height %}max-height: {{ logo.height }};{% endif %}{% endcapture %}
+  <div class="course-page-logo" style="{{ logo_pos }}">
+    {% if logo.url %}<a href="{{ logo.url }}" target="_blank" rel="external nofollow noopener">{% endif %}
+    <img
+      class="only-light"
+      src="{{ logo.light | prepend: 'assets/img/' | relative_url }}"
+      alt="{{ logo_alt }}"
+      style="{{ logo_size }}"
+    >
+    <img
+      class="only-dark"
+      src="{{ logo_dark | prepend: 'assets/img/' | relative_url }}"
+      alt="{{ logo_alt }}"
+      style="{{ logo_size }}"
+    >
+    {% if logo.url %}</a>{% endif %}
+  </div>
+{% endif %}
+
 <div class="course">
   {% if page.number or page.instructor or page.term or page.location or page.time %}
     <div class="course-info">

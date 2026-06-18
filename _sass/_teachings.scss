@@ -20,6 +20,7 @@
 }
 
 .course-item {
+  position: relative;
   border: 1px solid var(--global-divider-color);
   border-radius: 5px;
   padding: 15px;
@@ -32,9 +33,44 @@
   }
 }
 
+// University logo on an individual course page, pinned to the top-right
+// corner of the post. Independent of the home page's `.university-logo`,
+// so adjusting size/position here does NOT affect the home page.
+.course-page-logo {
+  position: absolute;
+  top: -24px; // move up (more negative = higher); right: 0 keeps it in the corner
+  right: 0;
+  z-index: 2;
+
+  img {
+    max-height: 54px;
+    width: auto;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .course-page-logo img {
+    max-height: 40px;
+  }
+}
+
+// University logo, pinned to the top-right corner of each course card.
+.course-logo {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  z-index: 1;
+
+  img {
+    max-height: 40px;
+    width: auto;
+  }
+}
+
 .course-title {
   margin-top: 0;
   margin-bottom: 10px;
+  padding-right: 50px; // leave room for the logo in the top-right corner
 }
 
 .course-meta {

@@ -8,6 +8,29 @@
         {% assign year_courses = year_group.items | sort: 'term' %}
         {% for course in year_courses %}
           <div class="course-item">
+            {% comment %} Opt-in logo: no `logo:` map means no logo on the card. Image/alt follow the course's `logo:` map (see the course layout); card-specific size/position come from its `logo.card` sub-map. {% endcomment %}
+            {% assign logo = course.logo %}
+            {% if logo.light %}
+              {% assign logo_dark = logo.dark | default: logo.light %}
+              {% assign logo_alt = logo.alt | default: course.title %}
+              {% capture card_pos %}{% if logo.card.top %}top: {{ logo.card.top }};{% endif %}{% if logo.card.right %}right: {{ logo.card.right }};{% endif %}{% endcapture %}
+              {% capture card_size %}{% if logo.card.height %}max-height: {{ logo.card.height }};{% endif %}{% endcapture %}
+              <div class="course-logo" style="{{ card_pos }}">
+                <img
+                  class="only-light"
+                  src="{{ logo.light | prepend: 'assets/img/' | relative_url }}"
+                  alt="{{ logo_alt }}"
+                  style="{{ card_size }}"
+                >
+                <img
+                  class="only-dark"
+                  src="{{ logo_dark | prepend: 'assets/img/' | relative_url }}"
+                  alt="{{ logo_alt }}"
+                  style="{{ card_size }}"
+                >
+              </div>
+            {% endif %}
+
             <h3 class="course-title">
               <a href="{{ course.url | relative_url }}">{{ course.title }}</a>
             </h3>

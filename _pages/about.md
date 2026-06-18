@@ -5,8 +5,8 @@ permalink: /
 subtitle: <span class="dottedlinks fadednote"><a href="https://physics-astronomy.jhu.edu" rel="external nofollow noopener" target="_blank">Department of Physics and Astronomy</a>, Johns Hopkins University</span>
 
 # University logo, top-right of the home page (light + dark variants).
-logo: university.shield.rgb.black.png
-logo_dark: university.shield.rgb.white.png
+logo: logos/university.shield.rgb.black.png
+logo_dark: logos/university.shield.rgb.white.png
 logo_url: https://www.jhu.edu
 logo_alt: Johns Hopkins University
 

@@ -430,6 +430,11 @@ ninja.data = [{
           description: "",
           section: "People",handler: () => {
               window.location.href = "/people/albert-einstein/";
+            },},{id: "people-max-verstappen",
+          title: 'Max Verstappen',
+          description: "",
+          section: "People",handler: () => {
+              window.location.href = "/people/max-verstappen/";
             },},{id: "people-wei-wang",
           title: 'Wei Wang',
           description: "",

@@ -425,11 +425,11 @@ ninja.data = [{
           section: "News",},{id: "news-congratulations-to-wei-on-successfully-defending-his-dissertation-and-becoming-dr-wang",
           title: 'Congratulations to Wei on successfully defending his dissertation and becoming Dr. Wang!',
           description: "",
-          section: "News",},{id: "people-group-member",
-          title: 'Group Member',
+          section: "News",},{id: "people-albert-einstein",
+          title: 'Albert Einstein',
           description: "",
           section: "People",handler: () => {
-              window.location.href = "/people/group-member/";
+              window.location.href = "/people/albert-einstein/";
             },},{id: "people-wei-wang",
           title: 'Wei Wang',
           description: "",
@@ -495,6 +495,11 @@ ninja.data = [{
           description: "",
           section: "Projects",handler: () => {
               window.location.href = "/projects/area_sensing/";
+            },},{id: "teachings-placeholder",
+          title: 'Placeholder',
+          description: "Course description placeholder.",
+          section: "Teachings",handler: () => {
+              window.location.href = "/teachings/ta-english/";
             },},{id: "teachings-general-physics-i",
           title: 'General Physics I',
           description: "Worked as Teaching Assistant (TA) in the Department of Physics and Astronomy at Johns Hopkins University.",

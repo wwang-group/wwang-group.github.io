@@ -8,7 +8,7 @@ category: areas
 related_publications: true
 ---
 
-Selected citations: {% cite z9xd-xbw5 %}, {% cite PhysRevE.109.054408 %}, and {% cite kashyap2024trade %}.
+Selected citations: {% cite z9xd-xbw5 %}, {% cite kashyap2024trade %}, and {% cite PhysRevE.109.054408 %}.
 
 <div class="spacer"></div>
 <div class="spacer"></div>

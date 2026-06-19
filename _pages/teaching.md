@@ -12,6 +12,6 @@ calendar: true
 This page displays a collection of courses with detailed schedules, materials, and resources. You can organize your courses by years, terms, or topics.
 -->
 
-{% include calendar.liquid calendar_id='ww000721@gmail.com' timezone='Asia/Shanghai' %}
+{% include calendar.liquid calendar_id='ww000721@gmail.com' timezone='America/New_York' %}
 
 {% include courses.liquid %}

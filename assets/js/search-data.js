@@ -499,7 +499,7 @@ ninja.data = [{
           title: 'Placeholder',
           description: "Course description placeholder.",
           section: "Teachings",handler: () => {
-              window.location.href = "/teachings/ta-english/";
+              window.location.href = "/teachings/placeholder/";
             },},{id: "teachings-general-physics-i",
           title: 'General Physics I',
           description: "Worked as Teaching Assistant (TA) in the Department of Physics and Astronomy at Johns Hopkins University.",

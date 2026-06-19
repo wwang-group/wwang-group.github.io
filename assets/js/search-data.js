@@ -500,26 +500,26 @@ ninja.data = [{
           description: "Course description placeholder.",
           section: "Teachings",handler: () => {
               window.location.href = "/teachings/placeholder/";
-            },},{id: "teachings-general-physics-i",
-          title: 'General Physics I',
-          description: "Worked as Teaching Assistant (TA) in the Department of Physics and Astronomy at Johns Hopkins University.",
-          section: "Teachings",handler: () => {
-              window.location.href = "/teachings/ta-general-physics-i/";
-            },},{id: "teachings-general-physics-ii",
-          title: 'General Physics II',
-          description: "Worked as Teaching Assistant (TA) in the Department of Physics and Astronomy at Johns Hopkins University.",
-          section: "Teachings",handler: () => {
-              window.location.href = "/teachings/ta-general-physics-ii/";
-            },},{id: "teachings-general-physics-lab",
-          title: 'General Physics Lab',
-          description: "Worked as Teaching Assistant (TA) in the Department of Physics and Astronomy at Johns Hopkins University.",
-          section: "Teachings",handler: () => {
-              window.location.href = "/teachings/ta-general-physics-lab/";
             },},{id: "teachings-subatomic-world",
           title: 'Subatomic World',
           description: "Worked as Teaching Assistant (TA) in the Department of Physics and Astronomy at Johns Hopkins University.",
           section: "Teachings",handler: () => {
-              window.location.href = "/teachings/ta-subatomic/";
+              window.location.href = "/teachings/ta-1-subatomic/";
+            },},{id: "teachings-general-physics-i",
+          title: 'General Physics I',
+          description: "Worked as Teaching Assistant (TA) in the Department of Physics and Astronomy at Johns Hopkins University.",
+          section: "Teachings",handler: () => {
+              window.location.href = "/teachings/ta-2-general-physics-i/";
+            },},{id: "teachings-general-physics-lab",
+          title: 'General Physics Lab',
+          description: "Worked as Teaching Assistant (TA) in the Department of Physics and Astronomy at Johns Hopkins University.",
+          section: "Teachings",handler: () => {
+              window.location.href = "/teachings/ta-3-general-physics-lab/";
+            },},{id: "teachings-general-physics-ii",
+          title: 'General Physics II',
+          description: "Worked as Teaching Assistant (TA) in the Department of Physics and Astronomy at Johns Hopkins University.",
+          section: "Teachings",handler: () => {
+              window.location.href = "/teachings/ta-4-general-physics-ii/";
             },},{
         id: 'social-cv',
         title: 'CV',

@@ -1,5 +1,5 @@
 ---
-order: 2
+order: 3
 image: prof_pic.jpg
 image_circular: false
 email: aeinstein@princeton.edu

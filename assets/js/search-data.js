@@ -440,6 +440,11 @@ ninja.data = [{
           description: "",
           section: "People",handler: () => {
               window.location.href = "/people/wei-wang/";
+            },},{id: "people-yue-kiki-wu",
+          title: 'Yue Kiki Wu',
+          description: "",
+          section: "People",handler: () => {
+              window.location.href = "/people/yue-kiki-wu/";
             },},{id: "projects-project-1",
           title: 'project 1',
           description: "with background image",

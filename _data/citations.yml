@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-06-19'
+  last_updated: '2026-07-07'
 papers:
   zvd30L4AAAAJ:0EnyYjriUFMC:
     citations: 0
@@ -34,7 +34,7 @@ papers:
     title: Trade-offs in concentration sensing in dynamic environments
     year: '2024'
   zvd30L4AAAAJ:YFjsv_pBGBYC:
-    citations: 16
+    citations: 17
     title: Confinement, Jamming, and Adhesion in Cancer Cells Dissociating from a Collectively Invading Strand
     year: '2025'
   zvd30L4AAAAJ:d1gkVwhDpl0C:
@@ -42,10 +42,10 @@ papers:
     title: Cell Dissociations in Collective Invasion
     year: '2023'
   zvd30L4AAAAJ:fPk4N6BV_jEC:
-    citations: 1
+    citations: 2
     title: Controlling tissue size by active fracture
     year: '2026'
   zvd30L4AAAAJ:mVmsd5A6BfQC:
-    citations: 7
+    citations: 8
     title: Limits on the accuracy of contact inhibition of locomotion
     year: '2024'
